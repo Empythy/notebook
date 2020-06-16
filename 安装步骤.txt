@@ -1,0 +1,52 @@
+﻿安装hadoop spark java 等步骤
+
+下载java
+ tar -xzvf jdk-8u201-linux-x64.tar.gz 
+修改 /etc/profile  ~/.bashrc
+下载hadoop
+ 修改配置信息
+ https://www.cnblogs.com/zengxiaoliang/p/6478859.html
+
+ 下载spark
+ tar xzvf spark-2.4.1-bin-hadoop2.7.tgz 
+ sudo gedit /etc/profile
+修改配置信息
+
+ 下载miniconda  安装虚拟环境
+https://conda.io/en/master/miniconda.html
+                                                                         
+                                                                         
+安装ssh 免登陆                                                           
+更改主机名  sudo gedit /etc/hostname                                     
+ssh localhost                                                            
+cd .ssh                                                                  
+ssh-keygen -t rsa                                                        
+cat id_rsa.pub >> authorized_keys                                        
+                                                                         
+                                                                         
+scp authorized_keys liuliang@Slave1:~/.ssh/authorized_keys               
+                                                                         
+scp -r /opt/ liuliang@Slave1:/opt/                                  
+scp -r /opt/miniconda3 liuliang@Slave1:/opt/                             
+                                                                         
+scp -r /.conda liuliang@Slave1:/.conda
+
+
+
+
+
+sudo apt-get apdate
+
+D:\VirtualBox>VBoxManage.exe  clonevdi  D:\virtual_box\hadoop.vdi D:\virtual_box\hadoop1.vdi
+
+
+VBoxManage.exe clonevdi  "D:\virtual_box\hadoop.vdi" "D:\virtual_box\hadoop.vdi"
+
+
+zookeeper 安装 https://my.oschina.net/kolbe/blog/908526
+关闭防火墙
+ sudo ufw disable
+        
+        
+        
+        https://www.geomesa.org/documentation/tutorials/geodocker-geomesa/geodocker-geomesa-local.html
