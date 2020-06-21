@@ -49,4 +49,4 @@ zookeeper 安装 https://my.oschina.net/kolbe/blog/908526
         
         
         
-        https://www.geomesa.org/documentation/tutorials/geodocker-geomesa/geodocker-geomesa-local.html
+https://www.geomesa.org/documentation/tutorials/geodocker-geomesa/geodocker-geomesa-local.html
